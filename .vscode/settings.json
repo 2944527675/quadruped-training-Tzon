@@ -1,0 +1,8 @@
+{
+  // 默认解释器 = source ~/.venvs/mujoco/bin/activate 后的 python
+  "python.defaultInterpreterPath": "/home/user/.venvs/mujoco/bin/python",
+  // 让解释器选择器能发现 ~/.venvs 下的环境
+  "python.venvPath": "/home/user/.venvs",
+  // 集成终端自动激活该虚拟环境（等价于 source ~/.venvs/mujoco/bin/activate）
+  "python.terminal.activateEnvironment": true
+}
