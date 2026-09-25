@@ -1,0 +1,16 @@
+{
+  // 默认解释器 = source ~/.venvs/mujoco/bin/activate 后的 python
+  "python.defaultInterpreterPath": "/home/user/.venvs/mujoco/bin/python",
+  // 让解释器选择器能发现 ~/.venvs 下的环境
+  "python.venvPath": "/home/user/.venvs",
+  // 集成终端自动激活该虚拟环境（等价于 source ~/.venvs/mujoco/bin/activate）
+  "python.terminal.activateEnvironment": true,
+  // VS Code 启动 / 选择解释器时，也在已有的当前终端中激活
+  "python.terminal.activateEnvInCurrentTerminal": true,
+
+  // 兜底：每个新建的集成终端直接注入 venv 环境变量（等价于已执行 source 激活）
+  "terminal.integrated.env.linux": {
+    "VIRTUAL_ENV": "/home/user/.venvs/mujoco",
+    "PATH": "/home/user/.venvs/mujoco/bin:${env:PATH}"
+  }
+}

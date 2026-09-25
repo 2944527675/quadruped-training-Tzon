@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: 当前文件 (mujoco venv)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "python": "/home/user/.venvs/mujoco/bin/python",
+      "env": {
+        "VIRTUAL_ENV": "/home/user/.venvs/mujoco",
+        "PATH": "/home/user/.venvs/mujoco/bin:${env:PATH}"
+      },
+      "justMyCode": true
+    }
+  ]
+}
